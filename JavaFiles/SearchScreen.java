@@ -41,6 +41,7 @@ public class SearchScreen implements ActionListener, KeyListener{
 		SearchInstance = into;
 		
 		try {
+			//Change here the file path, image is provided
 			jfrm.setIconImage(ImageIO.read(new File("C:\\\\Users\\\\Aman\\\\Downloads\\\\safetyInternalicon.jpg")));
 		} catch (IOException e) {
 			e.printStackTrace();
