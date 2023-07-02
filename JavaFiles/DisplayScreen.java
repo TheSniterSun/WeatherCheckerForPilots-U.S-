@@ -99,6 +99,7 @@ public class DisplayScreen implements ActionListener{
 		jfrm.getContentPane().add(split); jfrm.getContentPane().add(split2);
 	
 		try {
+			//Change file path, image provided
 			jfrm.setIconImage(ImageIO.read(new File("C:\\\\Users\\\\Aman\\\\Downloads\\\\safetyInternalicon.jpg")));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -109,7 +110,7 @@ public class DisplayScreen implements ActionListener{
 	public void weatherConditionDisplayed()
 	{
 		String temperature = String.format("%.2f", DisplayInstance.getMainResult().getResultTemperature());
-		temperature += " °C";
+		temperature += " Â°C";
 		t.setText(temperature);
 		String windSpeed = String.format("%.2f", DisplayInstance.getMainResult().getResultWindSpeed());
 		windSpeed += " Knots";
