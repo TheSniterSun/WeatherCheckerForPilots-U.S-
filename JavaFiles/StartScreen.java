@@ -40,6 +40,7 @@ public class StartScreen implements ActionListener, KeyListener{
 		StartInstance = into;
 		jfrm.getRootPane().setDefaultButton(but1);
 		try {
+			//Change file path, image provided
 			jfrm.setIconImage(ImageIO.read(new File("C:\\\\Users\\\\Aman\\\\Downloads\\\\safetyInternalicon.jpg")));
 		} catch (IOException e) {
 			e.printStackTrace();
