@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class SelectApp {
 	//Establishing Database Connection
     private Connection connect() {
-        // SQLite connection string
+        // SQLite connection string, change file path, file provided
         String url = "jdbc:sqlite:C:\\Users\\Aman\\Downloads\\GlobalAirportDatabase_SQLiteDB\\global_airports_sqlite.db";
         Connection conn = null;
         try {
